@@ -23,7 +23,7 @@ export default function Home() {
 
     const parsedQuantity = parseInt(quantity, 10);
     if (newItem.trim() === '' || isNaN(parsedQuantity) || parsedQuantity <= 0) {
-      setErrorMessage('Please enter a valid item name and a quantity greater than zero.');
+      setErrorMessage('Please enter a valid item name and or a quantity greater than zero.');
       return;
     }
 
